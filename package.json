@@ -1,0 +1,24 @@
+{
+  "name": "todo-webapp",
+  "version": "1.0.0",
+  "description": "TODO WebApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliwiakolacz/todo-webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/oliwiakolacz/todo-webapp/issues"
+  },
+  "homepage": "https://github.com/oliwiakolacz/todo-webapp#readme"
+}

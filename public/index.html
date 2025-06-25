@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO WebApp - Oliwia Kolacz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#333"/>
+</head>
+<body>
+
+    <header>
+        <h1>Moje Zadania</h1>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Dodaj nowe zadanie</h2>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="task-name">Nazwa zadania (min. 3 znaki):</label>
+                    <input type="text" id="task-name" name="task-name" required minlength="3">
+                    <p class="error-message" id="name-error"></p>
+                </div>
+                <div class="form-group">
+                    <label for="task-description">Opis:</label>
+                    <textarea id="task-description" name="task-description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="task-due-date">Termin wykonania:</label>
+                    <input type="date" id="task-due-date" name="task-due-date">
+                </div>
+                 <div class="form-group">
+                    <label for="task-email">E-mail do powiadomień (opcjonalnie):</label>
+                    <input type="email" id="task-email" name="task-email">
+                    <p class="error-message" id="email-error"></p>
+                </div>
+                <button type="submit">Dodaj zadanie</button>
+            </form>
+        </section>
+
+        <section id="tasks-section">
+            <h2>Lista zadań</h2>
+            <div id="task-list">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Oliwia Kolacz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
